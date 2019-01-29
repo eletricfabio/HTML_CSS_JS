@@ -4,14 +4,7 @@ window.onload = function() {
 
 	var img = document.querySelector('img');
 	img.addEventListener('click', function() {
-		alert('funcionando');
+		alert('Olá sou Fábio');
 	});
 
-	// var img = document.querySelector("img");
-	// img.addEventListener("click", function() {
-	// 	console.log('asd');
-	// 	alert("Olá");
-	// });
-
-	// body...
 }
