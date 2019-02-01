@@ -1,0 +1,26 @@
+body{
+	background: url("C:/Users/N00O/Documents/Kanban/imagem/index.png");
+	background-size: 100%;
+	background-position: center;
+
+}
+
+a:link, a:visited {
+  background-color: #709acf;
+  color: white;
+  border: 1px solid #709acf;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Calibri black;
+  margin-top: 600px;
+  margin-bottom: 600px;
+  margin-left: 205px;
+
+}
+
+a:hover, a:active {
+  background-color: #ee8745;
+  color: #ffffff;
+}

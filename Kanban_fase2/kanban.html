@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="kanban.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script> 
+	<script>
+	$(function() {
+    $("#calendario").datepicker({
+        dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+    });
+	});
+	</script>
+
+</head>
+
+	<title>Kanban</title>
+	<link rel="stylesheet" type="text/css" href="">
+
+<body>
+	<section id="boxInserir">
+	<input type="text" placeholder="Usuário">
+	<input type="text" placeholder="Data" id="calendario" />
+	</section>
+
+	<p><section id="boxInserir"> </p>
+		<input type="text" placeholder="Título">
+		<select>
+			<option>Tarefa</option>
+			<option>Reunião</option>
+			<option>Acompanhamento</option>
+		</select>
+
+		<section id="kanban">
+			<div class="postit">
+				<div class="close">X</div>
+				<div class="title"></div>
+				<textarea class="content">
+					
+				</textarea>
+				
+			</div>
+
+			<div class="postit">
+				<div class="close">X</div>
+				<div class="title"></div>
+				<textarea class="content">
+					
+				</textarea>
+				
+			</div>	
+
+			<div class="postit">
+				<div class="close">X</div>
+				<div class="title"></div>
+				<textarea class="content">
+					
+				</textarea>
+				
+			</div>
+
+		</section>
+
+</body>
+
+</html>
