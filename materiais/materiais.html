@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="materiais.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script> 
+	<script>
+	$(function() {
+    $("#calendario").datepicker({
+        dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+    });
+	});
+	</script>
+
+</head>
+
+	<h2>Gestão de Tempo</h2></p>
+
+</ul>
+
+	<title>materiais</title>
+	<link rel="stylesheet" type="text/css" href="materiais">
+
+<body>
+	<section id="boxInserir">
+	<input type="text" placeholder="Usuário">
+	
+	<br />
+	<br />
+	<hr />	
+
+	<form>
+  <div>
+  	<p><label for="appt-time">Insira a data e o horário (Ex.: 07:00 / 12:00 - 13:00 / 17:00) </label>
+  	<p><input type="text" placeholder="Data" id="calendario" />
+    <input id="appt-time" type="time" name="appt-time"
+           min="07:00" max="12:00" required
+           pattern="[0-9]{2}:[0-9]{2}">
+   <span class="validity"></span>
+    <input id="appt-time" type="time" name="appt-time"
+           min="12:00" max="17:00" required
+           pattern="[0-9]{2}:[0-9]{2}">
+   <span class="validity"></span>
+
+    <input id="appt-time" type="time" name="appt-time"
+           min="13:00" max="17:00" required
+           pattern="[0-9]{2}:[0-9]{2}">
+   <span class="validity"></span>
+    <input id="appt-time" type="time" name="appt-time"
+           min="17:00" max="18:00" required
+           pattern="[0-9]{2}:[0-9]{2}">
+   <span class="validity"></span>
+      <input type="submit" value="Inserir">
+  </div>
+</form>
+
+	</section>
+
+<script>  
+
+function duplicarCampos(){  
+    var clone = document.getElementById('origem').cloneNode(true);  
+    var destino = document.getElementById('destino');  
+    destino.appendChild (clone);  
+
+    var camposClonados = clone.getElementsByTagValue('+');  
+
+    for(i=0; i<camposClonados.length;i++){  
+        camposClonados[i].value = '';  
+    }  
+
+}  
+
+function removerCampos(id){  
+    var node1 = document.getElementById('destino');  
+    node1.removeChild(node1.childNodes[0]);  
+}  			
+</script>  
+
+	<div>
+		<p><label for="appt-time">Criar uma nota</label></p>
+	</div>
+	
+    <div id="origem" align="length">  
+
+<p><section id="boxInserir"> </p>
+		<input type="text" placeholder="Título">
+		<select>
+			<option>Tarefa</option>
+			<option>Reunião</option>
+			<option>Acompanhamento</option>
+		</select>
+
+		<section id="kanban"> 
+			<div class="postit">
+				<div class="title"></div>
+				<textarea class="content">
+					
+				</textarea>
+
+          <input type="submit" value="+" onclick="duplicarCampos();">  
+          <input type="submit" value="-" onclick="removerCampos(this);">   
+                </p>  </div></div>
+
+
+    <div id="destino">  
+    </div>
+
+				</section>
+
+</body>
+
+</html>
